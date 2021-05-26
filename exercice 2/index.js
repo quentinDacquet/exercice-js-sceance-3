@@ -1,5 +1,6 @@
 function valider(){
    let value = document.getElementById('inputtxt').value;
+   value = value.replace(/\s+/g, '');
    let tab = value.split('');   
    let tabreversed = tab.reverse();
    let longeur = tabreversed.length;
